@@ -1,5 +1,5 @@
 ---
-title: "Partager des variables entre SASS et Javascript"
+title: "Partager des variables entre SASS et Javascript avec Webpack"
 ---
 
 # Partager des variables entre SASS et Javascript avec Webpack
