@@ -11,11 +11,10 @@ La solution consiste à se servir de la propriété [background-position](https:
 
 En effet, en lisant les specs, on se rend compte qu'il est possible de lui fournir jusqu'à 4 arguments permettant d'exprimer un décalage relatif aux 4 côtés de l'élément HTML en question.
 
-Pour positionner un élément centré verticalement à 8px de la droite d'un input, il suffit donc de faire :
+Pour positionner un élément centré verticalement à 8px de la droite d'un input, il suffit de faire :
 
 ```css
 input {
-  background-position: right center 8px;
-  /* Il n'est pas utile de spécifier le dernier paramètre */
+  background-position: right 8px center;
 }
 ```
