@@ -1,6 +1,6 @@
 ---
 title: "Partager des variables entre SASS et Javascript avec Webpack"
-date: "2019-08-16"
+date: "2019-08-16 19:00"
 ---
 
 # Partager des variables entre SASS et Javascript avec Webpack
