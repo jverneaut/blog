@@ -3,6 +3,7 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    siteUrl: `https://blog.julienverneaut.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,5 +31,6 @@ module.exports = {
         trackingId: `UA-120978536-5`,
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }
