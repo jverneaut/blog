@@ -1,5 +1,6 @@
 $grey-0: hsl(240, 15%, 20%);
-$grey-1: hsl(240, 20%, 96%);
+$grey-1: hsl(240, 12%, 50%);
+$grey-2: hsl(240, 20%, 96%);
 
 $primary: #2d57c2;
 
@@ -8,6 +9,8 @@ $font-weight-1: 600;
 
 @import './reset.css';
 @import './typography';
+@import './header';
+@import './footer';
 
 body {
   font-family: 'Lato';
@@ -51,7 +54,7 @@ article {
 }
 
 pre {
-  background: $grey-1;
+  background: $grey-2;
   color: $grey-0;
   padding: 24px;
   box-sizing: border-box;

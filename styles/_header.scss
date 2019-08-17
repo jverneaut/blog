@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  background: white;
+  height: 56px;
+  align-items: center;
+  border-bottom: 2px solid $grey-2;
+}
+
+.header .logo {
+  font-weight: $font-weight-1;
+}
+
+.header .nav {
+  margin-left: auto;
+}
