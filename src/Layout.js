@@ -7,7 +7,7 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 
 import "../styles/main.scss"
-moment.locale("fr", localization)
+moment.updateLocale("fr", localization)
 
 const Layout = props => (
   <main>
