@@ -9,10 +9,6 @@
   transition: 0.2s all;
 }
 
-.footer a:hover {
-  color: $grey-0;
-}
-
 .footer a + a::before {
   content: ' - ';
 }
