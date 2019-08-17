@@ -3,11 +3,15 @@ $grey-1: hsl(240, 20%, 96%);
 
 $primary: #2d57c2;
 
+$font-weight-0: 400;
+$font-weight-1: 600;
+
 @import './reset.css';
 @import './typography';
 
 body {
   font-family: 'Lato';
+  font-weight: $font-weight-0;
 }
 
 .container {
@@ -33,7 +37,7 @@ body {
 
 .post-list__title {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: $font-weight-1;
   color: $grey-0;
 }
 
