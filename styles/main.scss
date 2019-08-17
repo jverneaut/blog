@@ -5,7 +5,7 @@ $grey-2: hsl(240, 20%, 96%);
 $primary: #2d57c2;
 
 $font-weight-0: 400;
-$font-weight-1: 700;
+$font-weight-1: 600;
 
 @import './reset.css';
 @import './typography';
@@ -13,7 +13,7 @@ $font-weight-1: 700;
 @import './footer';
 
 body {
-  font-family: 'Overpass';
+  font-family: system-ui;
   font-weight: $font-weight-0;
 }
 
@@ -40,12 +40,13 @@ article,
 }
 
 .post-list__title {
-  @extend h1;
+  @extend h3;
 }
 
+// TODO: Shouldn't need important
 .post-list__excerpt {
-  margin-top: 8px;
   color: $grey-0;
+  margin-top: 8px !important;
 }
 
 pre {
@@ -59,8 +60,8 @@ pre {
 
 pre code {
   font-family: 'Roboto Mono';
-  line-height: 1.4;
-  font-size: 16px;
+  line-height: 1.5;
+  font-size: 14px;
 }
 
 pre {

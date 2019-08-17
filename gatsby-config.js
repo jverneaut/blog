@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Overpass\:400:600`, `Roboto Mono`],
+        fonts: [`Roboto Mono`],
         display: "swap",
       },
     },
