@@ -23,6 +23,7 @@ body {
   padding: 0 24px;
 }
 
+article,
 .post-list {
   margin-top: 32px;
 }
@@ -39,18 +40,12 @@ body {
 }
 
 .post-list__title {
-  font-size: 32px;
-  font-weight: $font-weight-1;
-  color: $grey-0;
+  @extend h1;
 }
 
 .post-list__excerpt {
   margin-top: 8px;
   color: $grey-0;
-}
-
-article {
-  margin-top: 24px;
 }
 
 pre {
