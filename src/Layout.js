@@ -1,10 +1,13 @@
 import React from "react"
 import Helmet from "react-helmet"
+import moment from "moment"
+import localization from "moment/locale/fr"
 
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 
 import "../styles/main.scss"
+moment.locale("fr", localization)
 
 const Layout = props => (
   <main>

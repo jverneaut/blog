@@ -1,5 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import moment from "moment"
+
 import Layout from "../Layout"
 
 export default ({ data }) => {
@@ -17,6 +19,15 @@ export default ({ data }) => {
           return (
             <Link className="post-list__item" to={"/" + slug} key={slug}>
               <h2 className="post-list__title">{post.frontmatter.title}</h2>
+              <span className="post-list__date">
+                {moment(post.frontmatter.date)
+                  .fromNow()
+                  .split("")
+                  .map((letter, index) =>
+                    index === 0 ? letter.toUpperCase() : letter
+                  )
+                  .join("")}
+              </span>
               <p className="post-list__excerpt">{post.excerpt}</p>
             </Link>
           )
@@ -34,6 +45,7 @@ export const query = graphql`
         excerpt
         frontmatter {
           title
+          date
         }
       }
     }

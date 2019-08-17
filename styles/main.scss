@@ -43,10 +43,14 @@ article,
   @extend h3;
 }
 
-// TODO: Shouldn't need important
+.post-list__date {
+  display: block;
+  margin-top: 8px;
+}
+
 .post-list__excerpt {
   color: $grey-0;
-  margin-top: 8px !important;
+  margin-top: 8px;
 }
 
 pre {
