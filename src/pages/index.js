@@ -6,7 +6,7 @@ export default ({ data }) => {
   const { allMarkdownRemark: posts } = data
 
   return (
-    <Layout>
+    <Layout title="Accueil">
       <div className="post-list">
         {posts.nodes.map(post => {
           const slug = post.fileAbsolutePath

@@ -7,7 +7,7 @@ export default ({ data }) => {
   const { html } = post
 
   return (
-    <Layout>
+    <Layout title={post.frontmatter.title}>
       <article dangerouslySetInnerHTML={{ __html: html }}></article>
     </Layout>
   )
