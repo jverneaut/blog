@@ -4,7 +4,7 @@ title: "Partager des variables entre SASS et Javascript avec Webpack"
 
 # Partager des variables entre SASS et Javascript avec Webpack
 
-Si il vous arrive de vouloir accéder à des variables définies dans un fichier .scss depuis votre javascript, sachez que c'est tout à fait possible en utilisant Webpack.
+S'il vous arrive de vouloir accéder à des variables définies dans un fichier .scss depuis votre javascript, sachez que c'est tout à fait possible en utilisant Webpack.
 
 Il suffit de les exporter comme-suit :
 
