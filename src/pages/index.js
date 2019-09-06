@@ -20,15 +20,8 @@ export default ({ data }) => {
             <Link className="post-list__item" to={'/' + slug} key={slug}>
               <h2 className="post-list__title">{post.frontmatter.title}</h2>
               <span className="post-list__date">
-                {moment(post.frontmatter.date)
-                  .fromNow()
-                  .split('')
-                  .map((letter, index) =>
-                    index === 0 ? letter.toUpperCase() : letter
-                  )
-                  .join('')}
+                {moment(post.frontmatter.date).format('d MMMM YYYY')}
               </span>
-              <p className="post-list__excerpt">{post.excerpt}</p>
             </Link>
           );
         })}
@@ -39,10 +32,9 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
         fileAbsolutePath
-        excerpt
         frontmatter {
           title
           date

@@ -30,7 +30,32 @@ a {
   color: $primary;
 }
 
-$selectors: (p, h1, h2, h3, article);
+ul {
+  list-style-type: disc;
+  padding-left: 16px;
+}
+
+li {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+hr {
+  border: none;
+  border-bottom: 2px solid $grey-2;
+}
+
+
+$selectors: (p, li, ul, h1, h2, h3, article);
 
 @each $parent_selector in $selectors {
   #{$parent_selector} {
@@ -44,13 +69,15 @@ $selectors: (p, h1, h2, h3, article);
   }
 }
 
-$titles: (h1, h2, h3);
+$titles: (h1, h2, h3, hr);
 @each $title in $titles {
-  #{$title} + p {
+  #{$title} + p,
+  #{$title} + hr {
     margin-top: 24px;
   }
 
-  p + #{$title} {
+  p + #{$title},
+  hr + #{$title} {
     margin-top: 32px;
   }
 }
