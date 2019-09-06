@@ -75,7 +75,7 @@ Pour revenir à nos moutons, l'élément `&nbsp;` s'applique très bien dans ces
 
 En dehors de ces usages plutôt courants, il existe une multitude d'autres cas d'utilisation de cet élément. Comme bon nombre de choses dans le développement, il suffit d'y être exposé une fois que le concept devienne disponible dans notre tête et utilisé le moment venu.
 
-## Les inconvénients de cet éléments
+## Les inconvénients de cet élément
 
 En introduction de cet article, j'évoquais des cas plutôt embettants liés à l'utilisation du `&nbsp;`. Car si une de ses propriétés est de se faire passer pour un espace, il m'est arrivé plusieurs fois d'avoir à les chasser dans un texte d'apparence normale mais présentant des problèmes d'affichage.
 
