@@ -1,9 +1,7 @@
 ---
-title: "Partager des variables entre SASS et Javascript avec Webpack"
-date: "2019-08-16 19:00"
+title: 'Partager des variables entre SASS et Javascript avec Webpack'
+date: '2019-08-16 19:00'
 ---
-
-# Partager des variables entre SASS et Javascript avec Webpack
 
 S'il vous arrive de vouloir accéder à des variables définies dans un fichier .scss depuis votre javascript, sachez que c'est tout à fait possible en utilisant Webpack.
 
@@ -20,8 +18,8 @@ $primary: rgb(255, 0, 0);
 ...puis de les récupérer :
 
 ```js
-import variables from "./variables.scss"
-console.log(variables["primary"])
+import variables from './variables.scss';
+console.log(variables['primary']);
 // #ff0000
 ```
 

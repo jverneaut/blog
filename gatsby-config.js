@@ -22,7 +22,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Roboto Mono`],
-        display: "swap",
+        display: 'swap',
       },
     },
     {
@@ -33,4 +33,4 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
   ],
-}
+};

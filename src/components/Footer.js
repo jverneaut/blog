@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 const Footer = () => (
   <div className="container">
@@ -7,6 +7,6 @@ const Footer = () => (
       <a href="mailto:jverneaut@gmail.com">jverneaut@gmail.com</a>
     </div>
   </div>
-)
+);
 
-export default Footer
+export default Footer;

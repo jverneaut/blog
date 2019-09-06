@@ -1,9 +1,7 @@
 ---
-title: "Git Hooks : Empêcher un commit dans une branche"
-date: "2019-08-22 18:00"
+title: 'Git Hooks : Empêcher un commit dans une branche'
+date: '2019-08-22 18:00'
 ---
-
-# Git Hooks : Empêcher un commit dans une branche
 
 Créer un nouveau fichier nommé `pre-commit` dans le dossier caché `.git/hooks` et saisissez-y ce contenu :
 

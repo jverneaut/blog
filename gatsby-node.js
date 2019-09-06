@@ -1,7 +1,7 @@
-const path = require("path")
+const path = require('path');
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   const result = await graphql(`
     {
@@ -11,23 +11,23 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `)
+  `);
 
-  const template = path.resolve("./src/templates/article.js")
+  const template = path.resolve('./src/templates/article.js');
 
-  const posts = result.data.allMarkdownRemark.nodes
+  const posts = result.data.allMarkdownRemark.nodes;
 
   posts.forEach(post => {
     const slug = post.fileAbsolutePath
-      .split("/")
+      .split('/')
       .reverse()[0]
-      .split(".md")[0]
+      .split('.md')[0];
 
     createPage({
       component: template,
       slug: slug,
-      path: "/" + slug,
+      path: '/' + slug,
       context: { filename: post.fileAbsolutePath },
-    })
-  })
-}
+    });
+  });
+};
