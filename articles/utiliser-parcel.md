@@ -84,3 +84,5 @@ Est-ce donc la mort de Webpack ? Le software est-il en train de manger le monde 
 Sur des projets de petite et moyenne taille je recommande fortement l'utilisation de Parcel tant il est facile à mettre en place. Pire encore, je ferai même l'argument qu'utiliser Webpack sur ce type de projet est une perte de temps.
 
 En revanche, si votre applicatin est assez grande pour nécessiter l'utilisation du code-splitting, que votre fichier de configuration dépasse la centaine de ligne et que vous générez de nombreux artefacts, alors Webpack a encore tout à fait la place dans votre projet.
+
+De plus, certaines fonctionnalités ne fonctionnent que grâce à la façon dont Wepack opère. C'est le cas par exemple du [partage de variables entre SASS et js](/partager-variables-sass-js) que j'évoquais récemment dans un article.
