@@ -53,7 +53,7 @@ Le solde de votre compte est de
 
 La syntaxe française exige que chaque symbole composé de 2 parties (:, ;, «, etc.) soit entouré de deux espaces.
 
-Ainis, cet exemple est correct :
+Ainsi, cet exemple est correct :
 
 ```txt
 Lequel choisir : celui-ci ou celui-là ?
