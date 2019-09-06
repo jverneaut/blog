@@ -23,15 +23,25 @@ body {
   padding: 0 24px;
 }
 
-article,
 .post-list {
   margin-top: 32px;
+}
+
+article {
+  margin-top: 24px;
+}
+
+.article__date {
+  display: block;
+  margin-top: 32px;
+  color: $grey-1;
 }
 
 .post-list__item {
   display: block;
   text-decoration: none;
   max-width: 560px;
+  color: $grey-1;
 }
 
 .post-list__item +
