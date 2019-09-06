@@ -20,7 +20,7 @@ export default ({ data }) => {
             <Link className="post-list__item" to={'/' + slug} key={slug}>
               <h2 className="post-list__title">{post.frontmatter.title}</h2>
               <span className="post-list__date">
-                {moment(post.frontmatter.date).format('d MMMM YYYY')}
+                {moment(post.frontmatter.date).format('D MMMM YYYY')}
               </span>
             </Link>
           );
