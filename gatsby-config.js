@@ -39,5 +39,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `blog-julien-verneaut`,
+      },
+    },
   ],
 };

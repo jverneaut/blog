@@ -1,4 +1,5 @@
 const path = require('path');
+const utils = require('./src/utils');
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -18,13 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const posts = result.data.allMarkdownRemark.nodes;
 
-  const isArticle = post =>
-    post.fileAbsolutePath.split('/').reverse()[1] === 'articles';
-
-  const isDefinition = post =>
-    post.fileAbsolutePath.split('/').reverse()[1] === 'definitions';
-
-  posts.filter(isArticle).forEach(post => {
+  posts.filter(utils.isArticle).forEach(post => {
     const slug = post.fileAbsolutePath
       .split('/')
       .reverse()[0]
@@ -38,7 +33,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  posts.filter(isDefinition).forEach(post => {
+  posts.filter(utils.isDefinition).forEach(post => {
     const slug = post.fileAbsolutePath
       .split('/')
       .reverse()[0]
