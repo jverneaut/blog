@@ -8,7 +8,7 @@ Si vous faites du développement Web depuis un certain temps, il vous est certai
 - Peu importe la classe que vous ajoutez à votre titre, un des mots dépasse de son container,
 - Des mots sont collés en front alors qu'il apparaissent espacés normalement dans votre back-office,
 - Un groupe de mot passe à la ligne alors qu'ils pourraient largement se séparer sur 2 lignes,
-- _Etc, etc, etc._
+- ...
 
 La source commune de tous ces problèmes s'avère souvent être la même. J'ai nommé... l'entité HTML `&nbsp;`.
 
