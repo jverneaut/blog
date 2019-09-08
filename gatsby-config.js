@@ -45,5 +45,6 @@ module.exports = {
         shortname: `blog-julien-verneaut`,
       },
     },
+    `gatsby-plugin-catch-links`,
   ],
 };
