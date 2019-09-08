@@ -6,11 +6,13 @@ import Layout from '../Layout';
 
 export default ({ data }) => {
   const { allMarkdownRemark: posts } = data;
+  const isArticle = post =>
+    post.fileAbsolutePath.split('/').reverse()[1] === 'articles';
 
   return (
     <Layout title="Accueil">
       <div className="post-list">
-        {posts.nodes.map(post => {
+        {posts.nodes.filter(isArticle).map(post => {
           const slug = post.fileAbsolutePath
             .split('/')
             .reverse()[0]

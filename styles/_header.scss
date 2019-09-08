@@ -19,3 +19,8 @@
 .header .nav__item {
   text-decoration: none;
 }
+
+.header .nav__item +
+.nav__item {
+  margin-left: 16px;
+}

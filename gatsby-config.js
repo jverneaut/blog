@@ -14,6 +14,13 @@ module.exports = {
         path: `${__dirname}/articles`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `definitions`,
+        path: `${__dirname}/definitions`,
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
