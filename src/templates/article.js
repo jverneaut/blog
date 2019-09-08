@@ -2,17 +2,17 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import moment from 'moment';
 import Layout from '../Layout';
-import { isDefinition } from '../utils';
 import { Disqus } from 'gatsby-plugin-disqus';
+// import { isDefinition } from '../utils';
 
 export default ({ data }) => {
   const { markdownRemark: post } = data;
   const { html, frontmatter } = post;
   const { title, date } = frontmatter;
 
-  const { allMarkdownRemark: posts } = data;
-  const definitions = posts.nodes.filter(isDefinition);
-  console.log(definitions);
+  // const { allMarkdownRemark: posts } = data;
+  // const definitions = posts.nodes.filter(isDefinition);
+  // console.log(definitions);
 
   const disqusConfig = {
     identifier: post.id,

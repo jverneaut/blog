@@ -11,7 +11,7 @@ export default ({ data }) => {
     <Layout title={post.frontmatter.title}>
       <article
         dangerouslySetInnerHTML={{
-          __html: `<h1>Qu'est-ce que ${title} ?</h1>` + html,
+          __html: `<h1>Définition : ${title}</h1>` + html,
         }}
       ></article>
     </Layout>
