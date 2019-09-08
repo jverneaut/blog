@@ -109,3 +109,33 @@ code {
   width: 100% !important;
   margin: 40px 0 !important;
 }
+
+sup {
+  font-size: 75%;
+  vertical-align: top;
+}
+
+sup a {
+  text-decoration: none;
+}
+
+.footnote-backref {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footnotes ol {
+  list-style-type: decimal;
+}
+
+.footnotes li {
+  font-size: 14px;
+}
+
+.footnotes li p {
+  font-size: 14px;
+}
+
+.footnotes hr {
+  margin-top: 32px;
+}

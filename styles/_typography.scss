@@ -55,7 +55,7 @@ hr {
 }
 
 
-$selectors: (p, li, ul, h1, h2, h3, article);
+$selectors: (p, ol, li, ul, h1, h2, h3, hr, article);
 
 @each $parent_selector in $selectors {
   #{$parent_selector} {

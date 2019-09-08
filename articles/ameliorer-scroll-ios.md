@@ -7,7 +7,9 @@ Pour qui travaille régulièrement sur des applications web, un type de layout a
 
 Avec les modèles css Flex ou Grid rien de plus simple me direz-vous ! Il suffit de fixer la fenêtre à la hauteur de l'écran, de la découper en sections puis d'appliquer un overflow scroll/auto à la section principale.
 
-Seulement voilà, une fois passé sur une tablette ou un téléphone Apple quelque chose ne va pas : le scroll se comporte bizarrement et ne semble pas naturel.
+Seulement voilà, une fois passé sur une tablette ou un téléphone Apple quelque chose ne va pas : le scroll se comporte bizarrement et ne semble pas naturel.[^1]
+
+[^1]: [Exemple à cette adresse](https://lab.julienverneaut.com/scroll/)
 
 ## La propriété -webkit-overflow-scrolling: touch
 

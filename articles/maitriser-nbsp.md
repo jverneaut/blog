@@ -14,7 +14,9 @@ La source commune de tous ces problèmes s'avère souvent être la même. J'ai n
 
 ## Qu'est-ce que l'élément `&nbsp;`
 
-De l'anglais _**N**on-**B**reaking **SP**ace_, cet élément crée, comme son nom l'indique, un _espace non-cassable_ – **espace insécable** en bon français.
+De l'anglais _**N**on-**B**reaking **SP**ace_, cet élément crée, comme son nom l'indique, un _espace non-cassable_ – **espace insécable** en bon français[^1].
+
+[^1]: https://fr.wikipedia.org/wiki/Espace_ins%C3%A9cable
 
 Cet élément permet de créer un espace entre deux mots garantissant que ces mots restent sur la même ligne coûte que coûte. Ainsi si j'écris `un&nbsp;deux` dans mon code source, je m'assure que je ne verrai jamais `un`, un retour à la ligne puis `deux` sur la ligne du dessous.
 
