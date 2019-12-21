@@ -28,6 +28,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "gatsby-plugin-remove-trailing-slashes": "^2.1.17",
     "prettier": "^1.18.2"
   },
   "keywords": [
