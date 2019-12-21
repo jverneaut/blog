@@ -28,7 +28,7 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       component: articleTemplate,
       slug: slug,
-      path: '/' + slug,
+      path: '/' + slug + '/',
       context: { filename: post.fileAbsolutePath },
     });
   });
@@ -42,7 +42,7 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       component: definitionTemplate,
       slug: slug,
-      path: '/definitions/' + slug,
+      path: '/definitions/' + slug + '/',
       context: { filename: post.fileAbsolutePath },
     });
   });
