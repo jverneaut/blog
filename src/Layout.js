@@ -13,6 +13,10 @@ const Layout = props => (
   <main>
     <Helmet>
       <title>{props.title} - Blog de Julien Verneaut</title>
+      <link
+        rel="canonical"
+        href={window.location.href.split(/[?#]/)[0].replace(/\/$/, '')}
+      ></link>
     </Helmet>
     <Header />
     <div className="container">{props.children}</div>
