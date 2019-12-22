@@ -15,7 +15,9 @@ const Layout = props => (
       <title>{props.title} - Blog de Julien Verneaut</title>
       <link
         rel="canonical"
-        href={window.location.href.split(/[?#]/)[0].replace(/\/$/, '')}
+        href={
+          window && window.location.href.split(/[?#]/)[0].replace(/\/$/, '')
+        }
       ></link>
     </Helmet>
     <Header />
