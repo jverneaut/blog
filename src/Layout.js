@@ -16,7 +16,8 @@ const Layout = props => (
       <link
         rel="canonical"
         href={
-          window && window.location.href.split(/[?#]/)[0].replace(/\/$/, '')
+          typeof window !== 'undefined' &&
+          window.location.href.split(/[?#]/)[0].replace(/\/$/, '')
         }
       ></link>
     </Helmet>
