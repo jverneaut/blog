@@ -77,8 +77,6 @@ Avec le sélecteur **@at-root** ce n'est plus un problème. Je peux désormais �
 }
 ```
 
----
-
 Je l'admet, cet exemple n'est pas des plus démonstratif quant à l'intérêt de cette technique.
 
 J'ai cependant régulièrement besoin d'écrire ce genre de code :
