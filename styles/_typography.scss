@@ -70,7 +70,7 @@ $selectors: (p, ol, li, ul, h1, h2, h3, hr, article);
 
   @each $child_selector in $selectors {
     #{$parent_selector} + #{$child_selector} {
-      margin-top: 16px;
+      margin-top: 24px;
     }
   }
 }
@@ -79,11 +79,24 @@ $titles: (h1, h2, h3, hr);
 @each $title in $titles {
   #{$title} + p,
   #{$title} + hr {
-    margin-top: 24px;
+    margin-top: 8px;
   }
 
   p + #{$title},
   hr + #{$title} {
-    margin-top: 32px;
+    margin-top: 40px;
   }
+}
+
+h2 + p,
+h2 + hr {
+  margin-top: 16px;
+}
+
+li + li {
+  margin-top: 8px;
+}
+
+hr + p {
+  margin-top: 40px;
 }
