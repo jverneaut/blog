@@ -151,3 +151,17 @@ sup a {
 .footnotes hr {
   margin-top: 32px;
 }
+
+.gatsby-resp-image-figure figcaption {
+  text-align: center;
+}
+
+.gatsby-resp-image-wrapper,
+.gatsby-resp-image-figure {
+  margin: 80px 0;
+}
+
+.gatsby-resp-image-figure .gatsby-resp-image-wrapper {
+  margin-top: 0;
+  margin-bottom: 24px;
+}

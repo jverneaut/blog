@@ -1,13 +1,12 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import moment from 'moment';
+import { isArticle } from '../utils';
 
 import Layout from '../Layout';
 
 export default ({ data }) => {
   const { allMarkdownRemark: posts } = data;
-  const isArticle = post =>
-    post.fileAbsolutePath.split('/').reverse()[1] === 'articles';
 
   return (
     <Layout title="Accueil">

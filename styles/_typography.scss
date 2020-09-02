@@ -61,7 +61,7 @@ hr {
   border-bottom: 2px solid $grey-2;
 }
 
-$selectors: (p, ol, li, ul, h1, h2, h3, hr, article);
+$selectors: (p, ol, li, ul, h1, h2, h3, hr, article, blockquote);
 
 @each $parent_selector in $selectors {
   #{$parent_selector} {
@@ -82,7 +82,9 @@ $titles: (h1, h2, h3, hr);
     margin-top: 8px;
   }
 
+  ul + #{$title},
   p + #{$title},
+  blockquote + #{$title},
   hr + #{$title} {
     margin-top: 40px;
   }
@@ -90,7 +92,7 @@ $titles: (h1, h2, h3, hr);
 
 h2 + p,
 h2 + hr {
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 li + li {
@@ -99,4 +101,19 @@ li + li {
 
 hr + p {
   margin-top: 40px;
+}
+
+blockquote {
+  padding: 24px 32px;
+  border-left: 4px solid $primary;
+  background: $grey-2;
+}
+
+small {
+  font-size: 0.8em;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import profile from '../../assets/julien-verneaut.jpg';
+
 const Header = () => (
   <div className="header">
     <Link to="/" className="logo">
+      <img src={profile} alt="Julien Verneaut" />
       Julien Verneaut
     </Link>
     <div className="nav">

@@ -1,8 +1,7 @@
-const isArticle = post =>
-  post.fileAbsolutePath.split('/').reverse()[1] === 'articles';
+const isArticle = post => post.fileAbsolutePath.split('/').includes('articles');
 
 const isDefinition = post =>
-  post.fileAbsolutePath.split('/').reverse()[1] === 'definitions';
+  post.fileAbsolutePath.split('/').includes('definitions');
 
 module.exports = {
   isArticle,
