@@ -99,7 +99,7 @@ Globalement, le monde du développement mobile semble s'orienter vers le dévelo
 Le principe est simple : utiliser les technologies du web pour créer des applications mobiles. C'est l'approche que j'ai prise et je ne peux que la recommander pour plusieurs de raisons :
 
 - **Le web est là pour durer.** En apprenant à coder des applications avec les langages du web, vous allez développer des compétences qui seront utiles toute votre vie. La première version d'HTML date de 1993, celle de CSS de 1996 et celle de JavaScript de 1995 ! Une chose est sûre, ces langages ne sont pas près de passer de mode et sont une valeur sûre pour une initiation au développement.
-- **Time to market.** Même si chaque plateforme demande une attention particulière, le temps de développement est diminue significativement avec l'utilisation d'une technologie multi-plateforme.
+- **Time to market.** Même si chaque plateforme demande une attention particulière, l'utilisation d'une technologie multi-plateforme réduit le temps de développement de manière significative.
 - **Beginner friendly.** Si vous êtes débutant, mieux vaut se concentrer sur une seule technologie. Pour cette raison, le **cross-plateforme** est idéal car il vous permet de vous concentrer sur un seul set de langages.
 
 Vous l'aurez compris, je recommande donc fortement de passer par ces technologies pour mener à bien votre projet.
