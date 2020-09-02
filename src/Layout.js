@@ -18,7 +18,7 @@ const Layout = props => (
         content={`https://blog.julienverneaut.com/${props.slug}`}
       />
       <meta property="og:title" content={props.title} />
-      <meta property="og:image:type" content="image/jpg" />
+      <meta property="og:image:type" content="image/jpeg" />
       <meta
         property="og:image"
         content={'https://blog.julienverneaut.com/' + props.slug + '.jpg'}

@@ -26,13 +26,23 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const posts = result.data.allMarkdownRemark.nodes;
 
-  // This is ugly, sorry mom & dad
   await new Promise(resolve => {
     setTimeout(resolve, 1000);
   });
 
+  const sequentiallyExecuting = promises => {
+    let promise = Promise.resolve();
+    promises.forEach(task => {
+      promise = promise.then(data => {
+        return task;
+      });
+    });
+
+    return promise;
+  };
+
   // Generate OG Images
-  await Promise.all(
+  sequentiallyExecuting(
     posts.filter(utils.isArticle).map(post => {
       const slug = post.fileAbsolutePath
         .split('/')

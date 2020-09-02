@@ -7,8 +7,6 @@ class OGGenerator {
 
   async init() {
     this.browser = await puppeteer.launch();
-    this.page = await this.browser.newPage();
-    this.page.setViewport({ width: 1200, height: 1200 });
   }
 
   generateHTML(title) {
@@ -21,6 +19,8 @@ class OGGenerator {
           * {
             font-family: 'Roboto', sans-serif;
             text-align: center;
+            margin: 0;
+            padding: 0;
           }
 
           body {
@@ -30,21 +30,22 @@ class OGGenerator {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 10vw;
+            padding: 3vw;
             box-sizing: border-box;
           }
 
           h1 {
-            font-size: 64px;
+            font-size: 92px;
             font-weight: bold;
           }
 
           div {
             display: block;
             content: '';
-            height: 4px;
+            height: 6px;
             width: 132px;
             background: #4263eb;
+            margin: 40px 0;
           }
 
           h2 {
@@ -63,8 +64,11 @@ class OGGenerator {
   }
 
   async generate(title, path) {
-    await this.page.setContent(this.generateHTML(title));
-    await this.page.screenshot({ path });
+    const page = await this.browser.newPage();
+    page.setViewport({ width: 1200, height: 1200 });
+    await page.setContent(this.generateHTML(title));
+    await page.screenshot({ path });
+    await page.close();
   }
 }
 
