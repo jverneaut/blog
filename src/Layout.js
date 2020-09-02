@@ -12,6 +12,26 @@ moment.updateLocale('fr', localization);
 const Layout = props => (
   <main>
     <Helmet>
+      <meta name="twitter:card" content="summary" />
+      <meta
+        property="og:url"
+        content={`https://blog.julienverneaut.com/${props.slug}`}
+      />
+      <meta property="og:title" content={page.title} />
+      <meta property="og:image:type" content="image/jpg" />
+      <meta
+        property="og:image"
+        content={'https://blog.julienverneaut.com/' + props.slug + '.jpg'}
+      />
+      <meta
+        property="og:image:url"
+        content={'https://blog.julienverneaut.com/' + props.slug + '.jpg'}
+      />
+      <meta
+        property="og:image:secure_url"
+        content={'https://blog.julienverneaut.com/' + props.slug + '.jpg'}
+      />
+
       <title>{props.title} - Blog de Julien Verneaut</title>
       <link
         rel="canonical"
