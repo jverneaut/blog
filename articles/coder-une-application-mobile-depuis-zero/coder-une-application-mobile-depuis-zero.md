@@ -3,7 +3,7 @@ title: 'Coder une application mobile depuis zéro en 2020'
 date: '2020-09-02 13:33'
 ---
 
-Lorsque je fais de nouvelles connaissances et que je leur dis que je suis un développeur, j'obtiens souvent ce genre type de réponse :
+Lorsque je fais de nouvelles connaissances et que je leur dis que je suis un développeur, j'obtiens souvent ce type de réponse :
 
 > Oh, super ! J'ai justement un projet d'application. Est-ce que tu pourrais me montrer comment faire ?
 
