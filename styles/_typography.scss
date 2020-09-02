@@ -117,3 +117,8 @@ small {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.gatsby-resp-image-figure figcaption {
+  text-align: center;
+  line-height: 1.5;
+}
