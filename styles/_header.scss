@@ -5,6 +5,9 @@
   align-items: center;
   border-bottom: 2px solid $grey-2;
   padding: 4px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .header .logo {
