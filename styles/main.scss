@@ -11,6 +11,7 @@ $font-weight-1: 600;
 @import './typography';
 @import './header';
 @import './footer';
+@import './code';
 
 body {
   font-family: system-ui;
@@ -81,6 +82,10 @@ article {
 
 .definition-list__item-title {
   line-height: 1.6;
+}
+
+.gatsby-highlight {
+  margin: 40px 0;
 }
 
 pre {

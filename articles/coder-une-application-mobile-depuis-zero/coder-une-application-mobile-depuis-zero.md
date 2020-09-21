@@ -164,7 +164,7 @@ Je vais d'abord vous parler de mon coup de cœur que j'utilise dans mon travail 
 
 C'est cette technologie que je vous conseille d'utiliser. Comme mise en bouche, voici un exemple d'un composant qui affiche un compteur et un bouton pour l'incrémenter :
 
-```React
+```jsx
 import React, { useState } from 'react';
 import { Button, Text, View } from 'react-native';
 
