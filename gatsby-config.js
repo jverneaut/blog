@@ -64,5 +64,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-crisp-chat`,
+      options: {
+        websiteId: '5a133305-3328-41f8-bc2a-813281983174',
+        enableDuringDevelop: false,
+      },
+    },
   ],
 };
