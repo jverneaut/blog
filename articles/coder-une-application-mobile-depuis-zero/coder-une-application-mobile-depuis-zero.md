@@ -182,7 +182,7 @@ const Counter = () => {
 };
 ```
 
-Je ne suis pas là pour donner un cours de programmation mais j'aimerai vous en donner le goût en détaillant rapidement ce que fais le programme ci-dessus :
+Je ne suis pas là pour donner un cours de programmation mais j'aimerai vous en donner le goût en détaillant rapidement ce que fait le programme ci-dessus :
 
 - `import { ... } from 'xxxx'` : comme nous utilisons des librairies _(du code déjà écrit par quelqu'un d'autre)_, nous devons importer ce dont nous avons besoin dans notre programme. Ici, nous cherchons les éléments `Bouton`, `Text` et `View` qui permettent d'afficher un bouton, du texte et une zone de contenu dans le cadre d'une application mobile. Le reste n'est pas très important pour le moment.
 - `const [count, setCount] = useState(0)` : encore une fois, la syntaxe n'est vraiment pas importante pour le moment. Tout ce que nous faisons ici c'est de déclarer la variable `count` qui fait partie de _l'état_ de notre composant. L'état, c'est simplement une représentation des données que contrôle le composant à un moment T. Si l'état change, l'apparence du composant change généralement.
