@@ -36,6 +36,7 @@ article {
   display: block;
   margin-top: 32px;
   color: $grey-1;
+  font-weight: 500;
 }
 
 .post-list__item {
@@ -43,6 +44,46 @@ article {
   text-decoration: none;
   max-width: 560px;
   color: $grey-1;
+  margin-bottom: 32px;
+}
+
+.post-list__item:first-of-type {
+  max-width: 800px;
+  margin-top: 80px;
+  margin-bottom: 64px;
+
+  .post-list__title {
+    font-size: 48px;
+    color: $grey-0;
+  }
+
+  .post-list__date {
+    margin-top: 20px;
+    color: $primary;
+    font-weight: bold;
+    position: relative;
+    padding-left: 48px;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      content: '';
+      display: block;
+      background: $primary;
+      width: 32px;
+      height: 2px;
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    margin-top: 54px;
+    margin-bottom: 54px;
+
+    .post-list__title {
+      font-size: 40px;
+    }
+  }
 }
 
 .post-list__item + .post-list__item {
@@ -51,17 +92,18 @@ article {
 
 .post-list__title {
   @extend h3;
-  font-size: 40px;
-  line-height: 1;
+  font-size: 32px;
+  line-height: 1.15;
 
   @media screen and (max-width: 980px) {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 
 .post-list__date {
   display: block;
-  margin-top: 8px;
+  margin-top: 16px;
+  font-weight: 500;
 }
 
 .post-list__excerpt {
