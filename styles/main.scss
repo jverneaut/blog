@@ -93,15 +93,16 @@ pre {
   color: $grey-0;
   padding: 24px;
   box-sizing: border-box;
-  width: calc(100% + 24px * 2);
+  width: 100%;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   margin: 40px 0;
   border-radius: 4px;
 
-  @media screen and (max-width: 1080px) {
+  @media screen and (max-width: 1008px) {
+    width: calc(100% + #{24px * 2});
     transform: translateX(-24px);
-    border-radius: 0;
+    border-radius: 0 !important;
   }
 }
 
