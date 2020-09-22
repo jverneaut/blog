@@ -106,7 +106,7 @@ J'ai cependant régulièrement besoin d'écrire ce genre de code :
 
 ```
 
-Je pourrais bien sûr éviter cette redondance en imbriquant mes déclarations mais comme règle générale, je préfère aplatir mes styles par soucis de lisibilité et de maintenabilité. Les seules choses que je m'autorise à nester sont états et les variations (`:hover`, `:focus`, `&--dark`, etc.).
+Je pourrais bien sûr éviter cette redondance en imbriquant mes déclarations mais comme règle générale, je préfère aplatir mes styles par soucis de lisibilité et de maintenabilité. Les seules choses que je m'autorise à nester sont les états et les variations (`:hover`, `:focus`, `&--dark`, etc.).
 
 Grâce à la directive `#at-root`, il est possible de répercuter les variations du parent sur son enfant en utilisant une syntaxe très similaire. Je peux ainsi écrire :
 
