@@ -71,5 +71,11 @@ module.exports = {
         enableDuringDevelop: false,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/favicon.svg`,
+      },
+    },
   ],
 };
