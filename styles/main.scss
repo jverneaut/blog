@@ -209,3 +209,35 @@ sup a {
   margin-top: 0;
   margin-bottom: 24px;
 }
+
+@media (prefers-color-scheme: dark) {
+  .header,
+  blockquote,
+  figcaption,
+  body {
+    background: #212529;
+    color: white;
+  }
+
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  .footer a {
+    color: white;
+  }
+
+  .header {
+    border: none;
+  }
+
+  .post-list__item,
+  .post-list__title,
+  .header .logo,
+  .header .nav__item {
+    color: white !important;
+  }
+}
