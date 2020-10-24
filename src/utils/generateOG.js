@@ -18,7 +18,7 @@ class OGGenerator {
         <style>
           * {
             font-family: 'Roboto', sans-serif;
-            text-align: center;
+            text-align: left;
             margin: 0;
             padding: 0;
           }
@@ -28,7 +28,7 @@ class OGGenerator {
             height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             padding: 3vw;
             box-sizing: border-box;
@@ -43,7 +43,7 @@ class OGGenerator {
             display: block;
             content: '';
             height: 6px;
-            width: 132px;
+            width: 80px;
             background: #4263eb;
             margin: 40px 0;
           }
