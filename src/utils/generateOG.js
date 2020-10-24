@@ -30,12 +30,12 @@ class OGGenerator {
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            padding: 3vw;
+            padding: 4vw;
             box-sizing: border-box;
           }
 
           h1 {
-            font-size: 92px;
+            font-size: 76px;
             font-weight: bold;
           }
 
