@@ -36,7 +36,7 @@ pre[class*='language-'] {
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-  background: #14182d;
+  background: #171925;
 }
 
 /* Inline code */
@@ -157,5 +157,20 @@ pre[class*='language-'] {
   .token.attr-value,
   .token.url {
     font-weight: normal;
+  }
+}
+
+.gatsby-highlight-code-line {
+  display: block;
+  width: calc(100% + 32px);
+  background: #353846;
+  position: relative;
+  margin-left: -16px;
+
+  &::before {
+    content: '+';
+    margin-left: 16px;
+    margin-right: 8px;
+    opacity: 0.5;
   }
 }

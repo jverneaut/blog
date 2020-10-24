@@ -62,7 +62,7 @@ article {
     color: $primary;
     font-weight: bold;
     position: relative;
-    padding-left: 48px;
+    padding-left: 40px;
 
     &::after {
       position: absolute;
@@ -71,7 +71,7 @@ article {
       content: '';
       display: block;
       background: $primary;
-      width: 32px;
+      width: 20px;
       height: 2px;
     }
   }
