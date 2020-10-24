@@ -37,7 +37,7 @@ _Problem_, password protection works fine on the frontend but every page in the 
 
 ## Solution
 
-Gutenberg is asynchronous by design. One thing I love about it is that while editing a page locally, I can still make changes to any block template and they'll show up instantly. While this feature is a must-have for any page-builder worth its salt, it also means that **the website as to make http requests to himself for external ressources like stylesheets and script files**.
+Gutenberg is asynchronous by design. One thing I love about it is that while editing a page locally, I can still make changes to any block template and they'll show up instantly. While this feature is a must-have for any page-builder worth its salt, it also means that **the website has to make http requests to himself for external ressources like stylesheets and script files**.
 
 As we've enabled password protection and WordPress doesn't natively handle this case yet, we have to use a little htaccess trickery to re-enable styles :
 
