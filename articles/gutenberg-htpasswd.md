@@ -71,3 +71,13 @@ In essence, these two lines means :
 - If the request comes from an authenticated user or the env variable _noauth_ is true, authorize the request.
 
 And with that, our meticulously crafted styles are back and visible on the frontend as well as in the admin area of the client's website.
+
+### Obligatory security warning
+
+It may be possible to [spoof the HTTP Referer Header](https://en.wikipedia.org/wiki/Referer_spoofing) and thus bypass the auth process completely.
+
+In the case represented above I found that the risk was worth taking as the password protection is mainly put in place to block undesired users and to take an extra step in preventing search engines from crawling the website.
+
+Use your own judgement and generally don't copy paste code from a random blog on the interwebs 😬.
+
+A better, long-term solution would be to disable password protection for frontend assets only in the shape of a `FilesMatch ".(css|jpg|js|...)"` directive.
