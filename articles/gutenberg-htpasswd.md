@@ -76,7 +76,7 @@ And with that, our meticulously crafted styles are back and visible on the front
 
 It may be possible to [spoof the HTTP Referer Header](https://en.wikipedia.org/wiki/Referer_spoofing) and thus bypass the auth process completely.
 
-In the case represented above I found that the risk was worth taking as the password protection is mainly put in place to block undesired users and to take an extra step in preventing search engines from crawling the website.
+In the case presented above I found that the risk was worth taking as the password protection is mainly put in place to block undesired users and to take an extra step in preventing search engines from crawling the website.
 
 Use your own judgement and generally don't copy paste code from a random blog on the interwebs 😬.
 
