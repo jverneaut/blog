@@ -2,8 +2,9 @@ const path = require('path');
 const utils = require('./src/utils');
 const OGGenerator = require('./src/utils/generateOG');
 
+let ogGenerator;
 if (process.env.NODE_ENV !== 'development') {
-  const ogGenerator = new OGGenerator();
+  ogGenerator = new OGGenerator();
   ogGenerator.init();
 }
 
@@ -51,17 +52,17 @@ exports.createPages = async ({ graphql, actions }) => {
         .reverse()[0]
         .split('.md')[0];
 
-      return new Promise(async resolve => {
-        if (process.env.NODE_ENV !== 'development') {
+      if (process.env.NODE_ENV !== 'development') {
+        return new Promise(async resolve => {
           await ogGenerator.generate(
             post.frontmatter.title,
             'public/' + slug + '.jpg'
           );
           resolve();
-        } else {
-          resolve();
-        }
-      });
+        });
+      } else {
+        return;
+      }
     })
   );
 
