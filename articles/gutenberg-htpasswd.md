@@ -67,7 +67,7 @@ RewriteRule . /index.php [L]
 
 In essence, these two lines means :
 
-* If the request comes from _www.my-client-site.com_, then set the env variable _noauth_ to be true.<br>
+* If the request comes from _www.my-client-site.com_, then set the env variable _noauth_ to be true.
 * If the request comes from an authenticated user or the env variable _noauth_ is true, authorize the request.
 
 And with that, our meticulously crafted styles are back and visible on the frontend as well as in the admin area of the client's website.
