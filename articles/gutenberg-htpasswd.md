@@ -1,8 +1,8 @@
 ---
-title: 'Fix broken styles when using .htpasswd with WordPress Gutenberg'
-date: '2020-10-24 10:00'
----
+title: Fix broken styles when using .htpasswd with WordPress Gutenberg
+date: 2020-10-24 10:00
 
+---
 Gutenberg is awesome. Once setup, it allows any non-technical person to add new pages to their website and to do so in a visual drag-and-drop fashion.
 
 As much as I enjoy working with Gutenberg, I sometimes run into strange issues like the one I'm going to talk about below.
@@ -67,8 +67,8 @@ RewriteRule . /index.php [L]
 
 In essence, these two lines means :
 
-- If the request comes from _www.my-client-site.com_, then set the env variable _noauth_ to be true.<br>
-- If the request comes from an authenticated user or the env variable _noauth_ is true, authorize the request.
+* If the request comes from _www.my-client-site.com_, then set the env variable _noauth_ to be true.<br>
+* If the request comes from an authenticated user or the env variable _noauth_ is true, authorize the request.
 
 And with that, our meticulously crafted styles are back and visible on the frontend as well as in the admin area of the client's website.
 
