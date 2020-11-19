@@ -1,6 +1,7 @@
 ---
-title: 'Améliorer le comportement du scroll des appareils iOS'
+title: Améliorer le comportement du scroll des appareils iOS
 date: '2019-09-08 17:22'
+published: true
 ---
 
 Pour qui travaille régulièrement sur des applications web, un type de layout apparaît de manière récurrente : un écran avec une barre de menu en haut, une barre d'actions en bas et un menu sur un côté de l'écran.
@@ -28,4 +29,4 @@ Une propriété css non standard permet toutefois de récupérer ces effets : [-
 
 Avec cette seule ligne, le scroll se comportera correctement et votre application semblera d'autant plus qualitative auprès de vos utilisateurs.
 
-Pour voir cet effet de vous-mêmes, j'ai assemblé [une petite démo que vous pouvez essayer en cliquant ici](https://lab.julienverneaut.com/scroll/).
+Pour voir cet effet de vous-mêmes, j'ai assemblé [une petite démo que vous pouvez essayer en cliquant ici](https://fervent-allen-3654dd.netlify.app/scroll/).
