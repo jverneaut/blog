@@ -52,11 +52,15 @@ exports.createPages = async ({ graphql, actions }) => {
         .split('.md')[0];
 
       return new Promise(async resolve => {
-        await ogGenerator.generate(
-          post.frontmatter.title,
-          'public/' + slug + '.jpg'
-        );
-        resolve();
+        if (process.env.NODE_ENV !== 'development') {
+          await ogGenerator.generate(
+            post.frontmatter.title,
+            'public/' + slug + '.jpg'
+          );
+          resolve();
+        } else {
+          resolve();
+        }
       });
     })
   );
