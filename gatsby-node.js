@@ -2,8 +2,10 @@ const path = require('path');
 const utils = require('./src/utils');
 const OGGenerator = require('./src/utils/generateOG');
 
-const ogGenerator = new OGGenerator();
-ogGenerator.init();
+if (process.env.NODE_ENV !== 'development') {
+  const ogGenerator = new OGGenerator();
+  ogGenerator.init();
+}
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
