@@ -12,6 +12,7 @@
     "gatsby-plugin-disqus": "^1.1.2",
     "gatsby-plugin-google-analytics": "^2.1.17",
     "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-json-output": "^1.2.0",
     "gatsby-plugin-manifest": "^2.2.18",
     "gatsby-plugin-offline": "^3.0.9",
     "gatsby-plugin-react-helmet": "^3.1.8",

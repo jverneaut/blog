@@ -6,6 +6,41 @@ module.exports = {
     siteUrl: `https://blog.julienverneaut.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-json-output`,
+      options: {
+        siteUrl: `https://blog.julienverneaut.com`,
+        graphQLQuery: `
+        {
+          allMarkdownRemark(limit: 1000) {
+            edges {
+              node {
+                html
+                fileAbsolutePath
+                frontmatter {
+                  title
+                  date
+                }
+              }
+            }
+          }
+        }`,
+        serializeFeed: results =>
+          results.data.allMarkdownRemark.edges.map(({ node }) => {
+            const slug = node.fileAbsolutePath
+              .split('/')
+              .reverse()[0]
+              .split('.md')[0];
+
+            return {
+              path: '/' + slug,
+              title: node.frontmatter.title,
+              created: node.frontmatter.date,
+              html: node.html,
+            };
+          }),
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -34,7 +69,7 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-prismjs',
+            resolve: `gatsby-remark-prismjs`,
           },
         ],
       },
@@ -46,7 +81,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Roboto Mono`],
-        display: 'swap',
+        display: `swap`,
       },
     },
     {
@@ -67,7 +102,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-crisp-chat`,
       options: {
-        websiteId: '5a133305-3328-41f8-bc2a-813281983174',
+        websiteId: `5a133305-3328-41f8-bc2a-813281983174`,
         enableDuringDevelop: false,
       },
     },
