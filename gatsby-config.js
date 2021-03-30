@@ -69,6 +69,9 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-remark-embed-gist`,
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
           },
         ],
