@@ -21,7 +21,7 @@ export default ({ data }) => {
       </span>
       <article
         dangerouslySetInnerHTML={{
-          __html: `<h1>${title}</h1>${tableOfContents}` + html,
+          __html: `<h1>${title}</h1>` + html,
         }}
       ></article>
       <Disqus config={disqusConfig} />
