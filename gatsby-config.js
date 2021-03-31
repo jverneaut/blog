@@ -61,12 +61,8 @@ module.exports = {
               showCaptions: true,
             },
           },
-          {
-            resolve: `gatsby-remark-embed-gist`,
-          },
-          {
-            resolve: `gatsby-remark-prismjs`,
-          },
+          `gatsby-remark-embed-gist`,
+          `gatsby-remark-prismjs`,
         ],
       },
     },
