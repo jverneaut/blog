@@ -1,3 +1,4 @@
+test
 @echo off
 :debut
 cls
