@@ -1,6 +1,7 @@
 ---
 title: 'Utiliser @at-root pour les variations de style'
 date: '2020-03-23 15:34'
+path: 'at-root-sass'
 ---
 
 Imaginons que vous ayez du markup ressemblant à ceci :

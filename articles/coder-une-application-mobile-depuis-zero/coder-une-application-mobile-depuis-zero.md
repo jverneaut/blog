@@ -1,6 +1,7 @@
 ---
 title: 'Coder une application mobile depuis zéro en 2020'
 date: '2020-09-02 13:33'
+path: 'coder-une-application-mobile-depuis-zero'
 ---
 
 Lorsque je fais de nouvelles connaissances et que je leur dis que je suis un développeur, j'obtiens souvent ce type de réponse :

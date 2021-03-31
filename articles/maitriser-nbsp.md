@@ -1,6 +1,7 @@
 ---
 title: 'Maîtriser les espaces insécables'
 date: '2019-09-04 19:30'
+path: 'maitriser-nbsp'
 ---
 
 Si vous faites du développement Web depuis un certain temps, il vous est certainement déjà arrivé une de ces situations :

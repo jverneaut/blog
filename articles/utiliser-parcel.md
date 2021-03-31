@@ -1,6 +1,7 @@
 ---
 title: 'Développer plus rapidement avec Parcel'
 date: '2019-09-06 19:30'
+path: 'utiliser-parcel'
 ---
 
 Une des critique récurrente du développement frontend moderne est l'abondance d'outils à maîtriser pour créer une simple application web avec quelques fonctionnalités.

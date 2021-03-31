@@ -1,5 +1,4 @@
 const path = require('path');
-const utils = require('./src/utils');
 const OGGenerator = require('./src/utils/generateOG');
 
 let ogGenerator;
@@ -15,9 +14,9 @@ exports.createPages = async ({ graphql, actions }) => {
     {
       allMarkdownRemark {
         nodes {
-          fileAbsolutePath
           frontmatter {
             title
+            path
           }
         }
       }
@@ -45,17 +44,12 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Generate OG Images
   sequentiallyExecuting(
-    posts.filter(utils.isArticle).map(post => {
-      const slug = post.fileAbsolutePath
-        .split('/')
-        .reverse()[0]
-        .split('.md')[0];
-
+    posts.map(post => {
       if (process.env.NODE_ENV !== 'development') {
         return new Promise(async resolve => {
           await ogGenerator.generate(
             post.frontmatter.title,
-            'public/' + slug + '.jpg'
+            'public/' + post.frontmatter.path + '.jpg'
           );
           resolve();
         });
@@ -65,17 +59,12 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   );
 
-  posts.filter(utils.isArticle).forEach(async post => {
-    const slug = post.fileAbsolutePath
-      .split('/')
-      .reverse()[0]
-      .split('.md')[0];
-
+  posts.forEach(async post => {
     createPage({
       component: articleTemplate,
-      slug: slug,
-      path: '/' + slug,
-      context: { filename: post.fileAbsolutePath },
+      slug: post.frontmatter.path,
+      path: '/' + post.frontmatter.path,
+      context: { slug: post.frontmatter.path },
     });
   });
 };

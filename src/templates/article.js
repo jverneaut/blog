@@ -6,13 +6,8 @@ import { Disqus } from 'gatsby-plugin-disqus';
 
 export default ({ data }) => {
   const { markdownRemark: post } = data;
-  const { html, frontmatter, fileAbsolutePath } = post;
+  const { html, frontmatter, tableOfContents } = post;
   const { title, date } = frontmatter;
-
-  const slug = fileAbsolutePath
-    .split('/')
-    .reverse()[0]
-    .split('.md')[0];
 
   const disqusConfig = {
     identifier: post.id,
@@ -20,13 +15,14 @@ export default ({ data }) => {
   };
 
   return (
-    <Layout title={post.frontmatter.title} slug={slug}>
+    <Layout title={post.frontmatter.title} slug={post.frontmatter.path}>
       <span className="article__date">
         {moment(date).format('D MMMM YYYY')}
       </span>
-
       <article
-        dangerouslySetInnerHTML={{ __html: `<h1>${title}</h1>` + html }}
+        dangerouslySetInnerHTML={{
+          __html: `<h1>${title}</h1>${tableOfContents}` + html,
+        }}
       ></article>
       <Disqus config={disqusConfig} />
     </Layout>
@@ -34,14 +30,15 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query($filename: String!) {
-    markdownRemark(fileAbsolutePath: { eq: $filename }) {
-      fileAbsolutePath
+  query($slug: String!) {
+    markdownRemark(frontmatter: { path: { eq: $slug } }) {
       html
       id
+      tableOfContents(pathToSlugField: "frontmatter.path")
       frontmatter {
         title
         date
+        path
       }
     }
   }

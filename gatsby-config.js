@@ -16,10 +16,10 @@ module.exports = {
             edges {
               node {
                 html
-                fileAbsolutePath
                 frontmatter {
                   title
                   date
+                  path
                 }
               }
             }
@@ -27,13 +27,8 @@ module.exports = {
         }`,
         serializeFeed: results =>
           results.data.allMarkdownRemark.edges.map(({ node }) => {
-            const slug = node.fileAbsolutePath
-              .split('/')
-              .reverse()[0]
-              .split('.md')[0];
-
             return {
-              path: '/' + slug,
+              path: '/' + node.frontmatter.path,
               title: node.frontmatter.title,
               created: node.frontmatter.date,
               html: node.html,

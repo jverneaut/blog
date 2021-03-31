@@ -1,6 +1,7 @@
 ---
 title: 'Refactoring 10 years old code'
 date: '2021-03-30 16:30'
+path: 'refactoring-10-years-old-code'
 ---
 
 At the time of writing this article, it has already been 10 years since I first dabbled into programming.

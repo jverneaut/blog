@@ -2,6 +2,7 @@
 title: Améliorer le comportement du scroll des appareils iOS
 date: '2019-09-08 17:22'
 published: true
+path: 'ameliorer-scroll-ios'
 ---
 
 Pour qui travaille régulièrement sur des applications web, un type de layout apparaît de manière récurrente : un écran avec une barre de menu en haut, une barre d'actions en bas et un menu sur un côté de l'écran.

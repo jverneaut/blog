@@ -1,6 +1,7 @@
 ---
 title: 'Positionner une background-image par rapport à la droite en css'
 date: '2019-08-17 17:30'
+path: 'positionner-background-image-a-droite'
 ---
 
 Il est souvent utile de positionner une image de fond relativement à la droite d'un élément HTML. Exemple, positionner un [chevron](https://www.inline-svg.com) dans un dropdown, une loupe dans un champ recherche, etc.
