@@ -39,8 +39,13 @@ a {
 }
 
 ul {
-  list-style-type: disc;
   padding-left: 16px;
+  list-style-type: disc;
+}
+
+ol {
+  padding-left: 28px;
+  list-style-type: decimal;
 }
 
 li {

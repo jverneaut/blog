@@ -71,9 +71,9 @@ Il va de soit que les noms de ces variables n'ont [aucun sens etc.]
 
 Chaque section définie par un label (ex: `:blanc`) fait 3 choses :
 
-- changer la couleur de l'affichage an accord avec le choix de l'utilisateur
-- mettre le programme sur pause, c'est à dire attendre que l'utilisateur appuie sur une touche de son clavier avant de poursuivre l'éxecution du programme
-- se rendre au bloc `fin`.
+1. changer la couleur de l'affichage an accord avec le choix de l'utilisateur
+2. mettre le programme sur pause, c'est à dire attendre que l'utilisateur appuie sur une touche de son clavier avant de poursuivre l'éxecution du programme
+3. se rendre au bloc `fin`.
 
 `gist:jverneaut/5fd33e958430c054adda279408d76b37#colors_old.bat?lines=94-103`
 
