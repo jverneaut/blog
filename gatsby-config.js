@@ -58,6 +58,14 @@ module.exports = {
           },
           `gatsby-remark-embed-gist`,
           `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-classes`,
+            options: {
+              classMap: {
+                table: 'article-table',
+              },
+            },
+          },
         ],
       },
     },

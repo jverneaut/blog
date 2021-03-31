@@ -1,0 +1,21 @@
+.article-table {
+  width: auto;
+  border-collapse: collapse;
+}
+
+.article-table,
+.article-table th,
+.article-table td {
+  border: 1px solid $grey-1;
+}
+
+.article-table th,
+.article-table td {
+  padding: 12px;
+}
+
+.article-table thead {
+  text-align: left;
+  font-weight: 600;
+  background: $grey-2;
+}
