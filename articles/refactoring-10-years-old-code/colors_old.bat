@@ -16,10 +16,6 @@ if "%lol%"=="blanc" goto blanc
 :noir
 color 0f
 pause
-
-
-
-
 goto fin
 :bleu
 set /p choi=Quel bleu ?(fonce,gris,clair ou cyan)
