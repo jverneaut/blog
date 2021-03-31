@@ -59,7 +59,7 @@ Nous aborderons également le sujet du nommage des variables dans la prochaine s
 
 `gist:jverneaut/5fd33e958430c054adda279408d76b37#colors_old.bat?lines=5-15`
 
-Une fois la variable `lol` définie, ces quelques instructions se chargent de changer le flow d'éxécution du programme afin d'accéder à la bonne section du programme selon l'entrée utilisateur fournie.
+Une fois la variable `lol` définie, ces quelques instructions se chargent de changer le flow d'éxécution du programme afin d'accéder à la bonne section selon l'entrée utilisateur fournie.
 
 `gist:jverneaut/5fd33e958430c054adda279408d76b37#colors_old.bat?lines=20-29`
 
