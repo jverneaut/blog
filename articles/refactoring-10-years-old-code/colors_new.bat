@@ -39,7 +39,7 @@ IF "%color%"=="" (
 )
 
 IF "%colorCode%"=="" (
-  ECHO I don't know about this color...
+  ECHO This program can't handle this color.
 ) ELSE (
   COLOR %colorCode%
   ECHO Here's a nice %color% for you!
