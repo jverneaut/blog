@@ -25,7 +25,6 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
 
   const articleTemplate = path.resolve('./src/templates/article.js');
-  const definitionTemplate = path.resolve('./src/templates/definition.js');
 
   const posts = result.data.allMarkdownRemark.nodes;
 
@@ -76,20 +75,6 @@ exports.createPages = async ({ graphql, actions }) => {
       component: articleTemplate,
       slug: slug,
       path: '/' + slug,
-      context: { filename: post.fileAbsolutePath },
-    });
-  });
-
-  posts.filter(utils.isDefinition).forEach(post => {
-    const slug = post.fileAbsolutePath
-      .split('/')
-      .reverse()[0]
-      .split('.md')[0];
-
-    createPage({
-      component: definitionTemplate,
-      slug: slug,
-      path: '/definitions/' + slug,
       context: { filename: post.fileAbsolutePath },
     });
   });

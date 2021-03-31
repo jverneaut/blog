@@ -13,9 +13,6 @@ const Header = () => (
       <Link className="nav__item" to="/">
         Archive
       </Link>
-      <Link className="nav__item" to="/definitions">
-        Définitions
-      </Link>
     </div>
   </div>
 );
