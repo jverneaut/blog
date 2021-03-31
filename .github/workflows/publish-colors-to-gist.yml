@@ -1,7 +1,7 @@
 on:
   push:
     paths:
-    - articles/refactoring-10-years-old-code/**
+    - articles/refactoring-10-years-old-code/**.bat
 
 jobs:
   gist-sync:
