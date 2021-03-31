@@ -1,6 +1,5 @@
 @echo off
 :debut
-
 cls
 set /p lol=Quel est ta couleur prefere ?
 if "%lol%"=="noir" goto noir
