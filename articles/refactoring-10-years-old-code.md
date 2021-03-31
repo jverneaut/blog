@@ -46,19 +46,41 @@ Ignorons les fautes d'orthographe pour un instant et penchons-nous ligne par lig
 
 `gist:jverneaut/5fd33e958430c054adda279408d76b37#colors_old.bat?highlights=4&lines=1-4`
 
-Ces 4 lignes réalisent chacune des tâches bien distinctes :
+Ces 4 lignes réalisent chacune une tâche bien distinctes :
 
 - La première ligne `@echo off` est une particularité des scripts batchs Windows. Elle signale simplement à la console de ne pas afficher à l'utilisateur les commandes exécutées mais seulement leur résultat.
 - La seconde instruction `:debut` définie une région du programme qui sera accessible plus tard avec l'instruction `goto debut`, modifiant ainsi le flux d'éxécution du programme de haut en bas.
 - La troisième instruction permet d'effacer le contenu de la console.
-- La 4ème définie une variable `lol` qui contient le résultat d'une entrée utilisateur après avoir affiché la phrase « Quel est ta couleur prefere ? ». Je tenais encore une fois à m'excuser pour cette orthographe désastreuse, si seulement j'avais su que je me relirai un jour...
+- La 4ème instruction surlignée définie une variable `lol` qui contient le résultat d'une entrée utilisateur après avoir affiché la phrase « Quel est ta couleur prefere ? ». Je tenais encore une fois à m'excuser pour cette orthographe désastreuse, si seulement j'avais su que je me relirai un jour...
 
-Déjà, nous voyons que certains points posent problème. En effet, point de vue expérience utilisateur, aucune indication n'est donnée quant au format de l'entrée utilisateur attendu. Sans indication, un utilisateur pourrait très bien entrer _bleu_, _bleu très clair virant un petit peu sur le vert_ ou encore _#0000ff_ par exemple.
+Déjà, nous voyons que plusieurs éléments posent problème. En effet, d'un point de vue expérience utilisateur, aucune indication n'est donnée quant au format de l'entrée utilisateur attendu. Sans indication aucune, l'utilisateur à toute les raisons de penser qu'il pourrait aussi bien entrer _bleu_ que _bleu très clair virant un petit peu sur le vert_ ou encore _#0000ff_ par exemple.
 
 Nous aborderons également le sujet du nommage des variables dans la prochaine section de cet article.
 
-`gist:jverneaut/5fd33e958430c054adda279408d76b37#colors_old.bat?highlights=4&lines=1-4`
+`gist:jverneaut/5fd33e958430c054adda279408d76b37#colors_old.bat?lines=5-15`
+
+Une fois la variable `lol` définie, ces quelques instructions se chargent de changer le flow d'éxécution du programme afin d'accéder à la bonne section du programme selon l'entrée utilisateur fournie.
+
+`gist:jverneaut/5fd33e958430c054adda279408d76b37#colors_old.bat?lines=20-29`
+
+Pour certaines couleur, le programme demande des précisions sur la teinte de la couleur puis l'assigne à une nouvelle variable `choi` pour le bleu et `lki` pour le vert par exemple.
+
+Il va de soit que les noms de ces variables n'ont [aucun sens etc.]
+
+`gist:jverneaut/5fd33e958430c054adda279408d76b37#colors_old.bat?lines=58-73`
+
+Chaque section définie par un label (ex: `:blanc`) fait 3 choses :
+
+- changer la couleur de l'affichage an accord avec le choix de l'utilisateur
+- mettre le programme sur pause, c'est à dire attendre que l'utilisateur appuie sur une touche de son clavier avant de poursuivre l'éxecution du programme
+- se rendre au bloc `fin`.
+
+`gist:jverneaut/5fd33e958430c054adda279408d76b37#colors_old.bat?lines=94-103`
+
+Une fois le contenu de l'écran effacé et le message de fin affiché, une nouvelle variable `encore` permet de rediriger l'utilisateur au début du programme ou d'en interrompre l'éxecution selon que celui-ci ait entré oui ou non.
 
 ## Axes d'amélioration
 
-<!-- `gist:jverneaut/a327edb02774d2e3d44112f2a5f76db9#colors_new.bat` -->
+## Ma version actuelle
+
+`gist:jverneaut/a327edb02774d2e3d44112f2a5f76db9#colors_new.bat`
