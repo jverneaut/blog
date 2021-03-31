@@ -24,7 +24,7 @@ To this day, I still take great pleasure in designing programs, but I much more 
 
 Au moment d'écrire cette article, cela fait déjà 10 ans que j'ai écrit du code pour la première fois.
 
-Je me rappelle encore de la joie que j'ai ressentie lorsque, après des heures et des heures de recherche, j'ai enfin réussi à écrire un petit programme qui faisait exactement ce que je lui disais de faire.
+Je me rappelle encore de la joie que j'ai ressentie lorsque, après des heures de recherche, j'ai enfin réussi à écrire un petit programme qui faisait exactement ce que je lui disais de faire.
 
 Aujourd'hui, je ressens toujours un plaisir immense lorsque [je fais un truc qui fonctionne]. Mais ce que je préfère par dessus tout, c'est [de faire qqch de propre une fois le premier jet terminé].
 
