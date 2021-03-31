@@ -1,4 +1,7 @@
-on: [push]
+on:
+  push:
+    paths:
+    - articles/refactoring-10-years-old-code/**
 
 jobs:
   gist-sync:
