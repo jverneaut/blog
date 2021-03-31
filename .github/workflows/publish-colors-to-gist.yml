@@ -1,0 +1,25 @@
+on: [push]
+
+jobs:
+  gist-sync:
+    name: gist-sync
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - uses: popsiclestick/gist-sync-action@v1.2.0
+        id: sync_old
+        with:
+          auth: ${{ secrets.GIST_TOKEN }}
+          gist_url: https://gist.github.com/jverneaut/5fd33e958430c054adda279408d76b37
+          gist_title: colors_old.bat
+          github_file: articles/refactoring-10-years-old-code/colors_old.bat
+
+      - uses: popsiclestick/gist-sync-action@v1.2.0
+        id: sync_new
+        with:
+          auth: ${{ secrets.GIST_TOKEN }}
+          gist_url: https://gist.github.com/jverneaut/a327edb02774d2e3d44112f2a5f76db9
+          gist_title: colors_new.bat
+          github_file: articles/refactoring-10-years-old-code/colors_new.bat
