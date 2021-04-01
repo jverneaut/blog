@@ -6,9 +6,13 @@ import Layout from '../Layout';
 
 export default ({ data }) => {
   const { allMarkdownRemark: posts } = data;
+  const cover = posts.nodes[0].frontmatter.cover;
 
   return (
     <Layout title="Accueil">
+      <div className="post-cover">
+        <img src={cover.publicURL} alt="" />
+      </div>
       <div className="post-list">
         {posts.nodes.map(post => {
           return (
@@ -39,6 +43,9 @@ export const query = graphql`
           title
           date
           path
+          cover {
+            publicURL
+          }
         }
       }
     }

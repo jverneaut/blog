@@ -16,6 +16,11 @@ export default ({ data }) => {
 
   return (
     <Layout title={post.frontmatter.title} slug={post.frontmatter.path}>
+      {post.frontmatter.cover && (
+        <div className="post-cover">
+          <img src={post.frontmatter.cover.publicURL} alt="" />
+        </div>
+      )}
       <span className="article__date">
         {moment(date).format('D MMMM YYYY')}
       </span>
@@ -39,6 +44,9 @@ export const query = graphql`
         title
         date
         path
+        cover {
+          publicURL
+        }
       }
     }
   }

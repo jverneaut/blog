@@ -29,6 +29,19 @@ body {
   margin-top: 32px;
 }
 
+.post-cover {
+  height: 400px;
+}
+
+.post-cover img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
 article {
   margin-top: 24px;
 }

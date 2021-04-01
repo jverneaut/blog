@@ -2,6 +2,7 @@
 title: 'Refactorisation de mon premier programme'
 date: '2021-03-30 16:30'
 path: 'refactoring-10-years-old-code'
+cover: 'chan-lin-Sas07q7IuMc-unsplash.jpg'
 ---
 
 Au moment d'écrire cette article, cela fait 10 ans déjà que j'ai écrit du code pour la première fois.
