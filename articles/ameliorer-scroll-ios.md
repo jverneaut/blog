@@ -1,7 +1,6 @@
 ---
 title: Améliorer le comportement du scroll des appareils iOS
 date: '2019-09-08 17:22'
-published: true
 path: 'ameliorer-scroll-ios'
 ---
 

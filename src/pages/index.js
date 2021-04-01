@@ -18,6 +18,7 @@ export default ({ data }) => {
               key={post.frontmatter.path}
             >
               <h2 className="post-list__title">{post.frontmatter.title}</h2>
+              <p>{post.excerpt}</p>
               <span className="post-list__date">
                 {moment(post.frontmatter.date).format('D MMMM YYYY')}
               </span>
@@ -33,6 +34,7 @@ export const query = graphql`
   query {
     allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
+        excerpt
         frontmatter {
           title
           date
