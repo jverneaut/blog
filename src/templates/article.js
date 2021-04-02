@@ -6,7 +6,8 @@ import Layout from '../Layout';
 
 export default ({ data }) => {
   const { markdownRemark: post } = data;
-  const { html, frontmatter, tableOfContents } = post;
+  const { html, frontmatter } = post;
+  // const { tableOfContents } = post;
   const { title, date } = frontmatter;
 
   // const disqusConfig = {
