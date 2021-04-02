@@ -12,11 +12,27 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result = await graphql(`
     {
-      allMarkdownRemark {
-        nodes {
-          frontmatter {
-            title
-            path
+      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+        edges {
+          node {
+            frontmatter {
+              path
+              title
+            }
+          }
+          previous {
+            frontmatter {
+              path
+              title
+            }
+            excerpt
+          }
+          next {
+            frontmatter {
+              path
+              title
+            }
+            excerpt
           }
         }
       }
@@ -25,7 +41,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const articleTemplate = path.resolve('./src/templates/article.js');
 
-  const posts = result.data.allMarkdownRemark.nodes;
+  const posts = result.data.allMarkdownRemark.edges;
 
   await new Promise(resolve => {
     setTimeout(resolve, 1000);
@@ -48,8 +64,8 @@ exports.createPages = async ({ graphql, actions }) => {
       if (process.env.NODE_ENV !== 'development') {
         return new Promise(async resolve => {
           await ogGenerator.generate(
-            post.frontmatter.title,
-            'public/' + post.frontmatter.path + '.jpg'
+            post.node.frontmatter.title,
+            'public/' + post.node.frontmatter.path + '.jpg'
           );
           resolve();
         });
@@ -62,9 +78,13 @@ exports.createPages = async ({ graphql, actions }) => {
   posts.forEach(async post => {
     createPage({
       component: articleTemplate,
-      slug: post.frontmatter.path,
-      path: '/' + post.frontmatter.path,
-      context: { slug: post.frontmatter.path },
+      slug: post.node.frontmatter.path,
+      path: '/' + post.node.frontmatter.path,
+      context: {
+        slug: post.node.frontmatter.path,
+        previous: post.previous || null,
+        next: post.next || null,
+      },
     });
   });
 };
