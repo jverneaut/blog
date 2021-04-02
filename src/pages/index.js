@@ -6,13 +6,14 @@ import Layout from '../Layout';
 
 export default ({ data }) => {
   const { allMarkdownRemark: posts } = data;
-  const cover = posts.nodes[0].frontmatter.cover;
 
   return (
     <Layout title="Accueil">
-      <div className="post-cover">
-        <img src={cover.publicURL} alt="" />
-      </div>
+      {posts.nodes[0].frontmatter.cover && (
+        <div className="post-cover">
+          <img src={posts.nodes[0].frontmatter.cover.publicURL} alt="" />
+        </div>
+      )}
       <div className="post-list">
         {posts.nodes.map(post => {
           return (
