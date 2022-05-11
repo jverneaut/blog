@@ -40,6 +40,7 @@ const Layout = props => (
           window.location.href.split(/[?#]/)[0].replace(/\/$/, '')
         }
       ></link>
+      <script defer data-domain="blog.julienverneaut.com" src="https://plausible.io/js/plausible.js"></script>
     </Helmet>
     <Header />
     <div className="container">{props.children}</div>
