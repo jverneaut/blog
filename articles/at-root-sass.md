@@ -71,7 +71,7 @@ Avec le sélecteur **@at-root** ce n'est plus un problème. Je peux désormais �
       color-dark;
     }
 
-    .bg-dark {
+    .bg-dark & {
       color: white;
     }
   }
