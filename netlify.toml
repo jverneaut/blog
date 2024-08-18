@@ -9,3 +9,63 @@
   to = "https://www.julienverneaut.com/articles"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://blog.julienverneaut.com/refactoring-10-years-old-code"
+  to = "https://www.julienverneaut.com/articles/archive-refactorisation-mon-premier-programme"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://blog.julienverneaut.com/gutenberg-htpasswd"
+  to = "https://www.julienverneaut.com/en/articles/archive-fix-broken-styles-when-using-htpasswd-wordpress-gutenberg"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://blog.julienverneaut.com/coder-une-application-mobile-depuis-zero"
+  to = "https://www.julienverneaut.com/articles/archive-coder-application-mobile-depuis-zero-en-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://blog.julienverneaut.com/at-root-sass"
+  to = "https://www.julienverneaut.com/articles/archive-utiliser-root-variations-style"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://blog.julienverneaut.com/ameliorer-scroll-ios"
+  to = "https://www.julienverneaut.com/articles/archive-ameliorer-comportement-scroll-appareils-ios"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://blog.julienverneaut.com/utiliser-parcel"
+  to = "https://www.julienverneaut.com/articles/archive-developper-plus-rapidement-parcel"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://blog.julienverneaut.com/maitriser-nbsp"
+  to = "https://www.julienverneaut.com/articles/archive-maitriser-espaces-insecables"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://blog.julienverneaut.com/empecher-commit-branche-git"
+  to = "https://www.julienverneaut.com/articles/archive-git-hooks-empecher-commit-branche"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://blog.julienverneaut.com/positionner-background-image-a-droite"
+  to = "https://www.julienverneaut.com/articles/archive-positionner-background-image-par-rapport-droite-en-css"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://blog.julienverneaut.com/partager-variables-sass-js"
+  to = "https://www.julienverneaut.com/articles/archive-partager-variables-entre-sass-javascript-webpack"
+  status = 301
+  force = true
