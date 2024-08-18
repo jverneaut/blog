@@ -3,3 +3,8 @@
   for = "/*"
     [headers.values]
     Access-Control-Allow-Origin = "*"
+
+[[redirects]]
+  from = "/"
+  to = "https://www.julienverneaut.com/articles"
+  status = 301
