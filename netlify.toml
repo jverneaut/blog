@@ -5,6 +5,7 @@
     Access-Control-Allow-Origin = "*"
 
 [[redirects]]
-  from = "/"
+  from = "https://blog.julienverneaut.com"
   to = "https://www.julienverneaut.com/articles"
   status = 301
+  force = true
